@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>devyspov</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ► Hero Intro -->
+  <section class="intro">
+    <div class="content">
+      <h1>Devy’s point of view</h1>
+      <a href="#category" class="btn">My Website</a>
+    </div>
+
+    <!-- ► Handles toggle (bottom-right) -->
+    <div class="handles-box" id="handlesBox">Handles</div>
+    <div class="handles-popup" id="handlesPopup">
+      <ul>
+        <li>
+          <a href="https://instagram.com/d3vyspov/" target="_blank" rel="noopener">
+            @devyspov
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/vect0red_rast3r" target="_blank" rel="noopener">
+            @vect0red_rast3r
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ► Category Hero (background set by JS) -->
+  <section id="category" class="category-hero"></section>
+
+  <!-- ► Category Nav (fixed top-right, shown after intro) -->
+  <nav class="category-nav">
+    <a href="#people">People</a>
+    <a href="#places">Places</a>
+    <a href="#things">Things</a>
+    <a href="about.html">About</a>
+    <a href="connect.html">Connect</a>
+  </nav>
+
+  <!-- ► Admin Button & Panel -->
+  <button id="adminBtn" class="admin-btn">Admin</button>
+  <div id="adminPanel" class="admin-panel">
+    <div class="admin-content">
+      <button id="adminClose" class="admin-close">&times;</button>
+      <h2>Photo & Category Manager</h2>
+
+      <!-- Category Management -->
+      <div class="admin-section">
+        <h3>Categories</h3>
+        <ul id="categoryList" class="category-list"></ul>
+        <input type="text" id="newCategoryName" placeholder="New category name" />
+        <button id="addCategoryBtn">Add Category</button>
+      </div>
+      <hr />
+
+      <!-- Photo Management -->
+      <div class="admin-section">
+        <h3>Photos</h3>
+        <div id="photoList" class="photo-list"></div>
+        <input type="file" id="photoUpload" multiple accept="image/*" />
+        <button id="uploadBtn">Upload Photos</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ► Gallery Sections -->
+  <main id="main">
+    <section id="people" class="gallery section grid">
+      <h2>People</h2>
+      <div class="grid">
+        <!-- <div class="card"><img src="img/people1.jpg" alt=""></div> -->
+      </div>
+    </section>
+
+    <section id="places" class="gallery section grid">
+      <h2>Places</h2>
+      <div class="grid">
+        <!-- … -->
+      </div>
+    </section>
+
+    <section id="things" class="gallery section grid">
+      <h2>Things</h2>
+      <div class="grid">
+        <!-- … -->
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
